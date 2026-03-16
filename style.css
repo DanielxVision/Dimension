@@ -1,15 +1,16 @@
+html{
+scroll-behavior:smooth;
+}
+
 body{
 margin:0;
 font-family:Poppins;
 color:white;
-height:100vh;
 background:linear-gradient(120deg,#0f0f0f,#111,#0b0b0b);
 background-size:400% 400%;
 animation:gradientFlow 12s ease infinite;
 overflow-x:hidden;
 }
-
-/* animated background */
 
 @keyframes gradientFlow{
 0%{background-position:0% 50%}
@@ -22,14 +23,13 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:25px 60px;
-backdrop-filter:blur(15px);
 background:rgba(20,20,20,0.4);
+backdrop-filter:blur(15px);
 border-bottom:1px solid rgba(255,255,255,0.05);
 }
 
 .logo{
-letter-spacing:4px;
-font-weight:600;
+letter-spacing:5px;
 }
 
 nav ul{
@@ -57,8 +57,6 @@ align-items:center;
 text-align:center;
 }
 
-/* main title */
-
 .main-title{
 font-size:90px;
 letter-spacing:8px;
@@ -67,18 +65,11 @@ background:linear-gradient(90deg,#ffffff,#999,#ffffff);
 -webkit-text-fill-color:transparent;
 }
 
-.hero p{
-color:#aaa;
-margin-top:10px;
-}
-
-/* glass card style */
-
 .cards{
 display:flex;
 justify-content:center;
 gap:30px;
-padding:60px;
+padding:80px;
 flex-wrap:wrap;
 }
 
@@ -113,4 +104,48 @@ transition:0.3s;
 button:hover{
 transform:scale(1.1);
 background:rgba(255,255,255,0.25);
+}
+
+.contact{
+text-align:center;
+padding:80px;
+}
+
+footer{
+text-align:center;
+padding:40px;
+color:#777;
+border-top:1px solid #222;
+}
+
+/* bubbles */
+
+.bubbles span{
+position:absolute;
+bottom:-50px;
+width:20px;
+height:20px;
+background:rgba(255,255,255,0.08);
+border-radius:50%;
+animation:float 12s infinite;
+}
+
+.bubbles span:nth-child(2){left:20%;animation-delay:2s}
+.bubbles span:nth-child(3){left:40%;animation-delay:4s}
+.bubbles span:nth-child(4){left:60%;animation-delay:1s}
+.bubbles span:nth-child(5){left:80%;animation-delay:3s}
+.bubbles span:nth-child(6){left:90%;animation-delay:5s}
+
+@keyframes float{
+0%{
+transform:translateY(0);
+opacity:0;
+}
+50%{
+opacity:1;
+}
+100%{
+transform:translateY(-100vh);
+opacity:0;
+}
 }
