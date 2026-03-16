@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Daniel's Website</title>
+<title>DIMENSION</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -13,37 +13,47 @@
 
 <body>
 
+<div class="bubbles">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+
 <nav>
-<h2 class="logo">DΛNIEL</h2>
+
+<h2 class="logo">DIMENSION</h2>
 
 <ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Projects</a></li>
-<li><a href="#">Tools</a></li>
-<li><a href="#">Contact</a></li>
+<li><a href="#home">Home</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
 </ul>
 
 </nav>
 
-<section class="hero">
+<section id="home" class="hero">
 
 <h1 class="main-title">DIMENSION</h1>
+
 <p>A smooth digital universe</p>
 
-<button id="btn">Explore</button>
+<button onclick="scrollToProjects()">Explore</button>
 
 </section>
 
-<section class="cards">
+<section id="projects" class="cards">
 
 <div class="card">
 <h3>Roblox Scripts</h3>
-<p>Useful scripts for Roblox developers.</p>
+<p>Scripts and tutorials for Roblox developers.</p>
 </div>
 
 <div class="card">
 <h3>Study Tools</h3>
-<p>Math, physics and chemistry tools.</p>
+<p>Physics, chemistry and maths helpers.</p>
 </div>
 
 <div class="card">
@@ -52,6 +62,22 @@
 </div>
 
 </section>
+
+<section id="contact" class="contact">
+
+<h2>Contact</h2>
+
+<p>Want to work together or ask something?</p>
+
+<button onclick="sendEmail()">Contact Me</button>
+
+</section>
+
+<footer>
+
+<p>© 2026 DIMENSION</p>
+
+</footer>
 
 <script src="script.js"></script>
 
