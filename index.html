@@ -74,15 +74,7 @@
 <h3>Gamepass Script</h3>
 <p>Complete working Gamepass system.</p>
 
-<pre id="script1">
-  
--- Gamepass Script Example
-local MarketplaceService = game:GetService("MarketplaceService")
-
-print("Gamepass system loaded")
-</pre>
-
-<button onclick="copyScript('script1')">Copy Script</button>
+<button onclick="openScript('script1')">Get Script</button>
 
 </div>
 
@@ -90,14 +82,7 @@ print("Gamepass system loaded")
 <h3>Door System Script</h3>
 <p>Automatic door open and close.</p>
 
-<pre id="script2">
--- Door Script Example
-script.Parent.Touched:Connect(function(hit)
-script.Parent.Transparency = 1
-end)
-</pre>
-
-<button onclick="copyScript('script2')">Copy Script</button>
+<button onclick="openScript('script2')">Get Script</button>
 
 </div>
 
@@ -105,18 +90,7 @@ end)
 <h3>Leaderboard Script</h3>
 <p>Displays custom player stats.</p>
 
-<pre id="script3">
--- Leaderboard Script Example
-game.Players.PlayerAdded:Connect(function(player)
-
-local stats = Instance.new("Folder")
-stats.Name = "leaderstats"
-stats.Parent = player
-
-end)
-</pre>
-
-<button onclick="copyScript('script3')">Copy Script</button>
+<button onclick="openScript('script3')">Get Script</button>
 
 </div>
 
