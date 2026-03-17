@@ -249,7 +249,7 @@ transform:translateY(100px) translateX(50px);
 100%{
 transform:translateY(-100px) translateX(-50px);
 }
-}
+
 
 .more-section{
 text-align:center;
