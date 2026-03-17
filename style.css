@@ -251,3 +251,31 @@ transform:translateY(100px) translateX(50px);
 transform:translateY(-100px) translateX(-50px);
 }
 }
+
+.more-section{
+text-align:center;
+padding:80px 20px;
+}
+
+.more-buttons{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.more-buttons button{
+font-size:18px;
+padding:16px 40px;
+border-radius:40px;
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,0.1);
+transition:0.3s;
+}
+
+.more-buttons button:hover{
+transform:scale(1.1);
+background:rgba(255,255,255,0.25);
+}
